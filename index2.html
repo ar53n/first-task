@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Мобилизация</h1>
+    </header>
+</body>
+<nav>
+    <input class="shri-category" type="radio" id="shri_1" name="shri" value="1"><label for="shri_1">ШРИ</label>
+    <input class="shri-category" type="radio" name="shri" id="shri_2" value="2"><label for="shri_2">ШМР</label>
+    <input class="shri-category" type="radio" name="shri" id="shri_3" value="3"><label for="shri_3">ШМД</label>
+</nav>
+<div id="app"></div>
+<!--Предположим что данные уже получены-->
+<!--DATA BEGIN-->
+<script>
+    var data = [{
+            "theme": "Лекция 1. Адаптивная верстка",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Дмитрий Душкин"],
+            "time": 1476975600000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 2. Работа с сенсорным пользовательским вводом",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Дмитрий Душкин"],
+            "time": 1477580400000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 3. Мультимедиа: возможности браузера",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Максим Васильев"],
+            "time": 1478185200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 4. Нативные приложения на веб-технологиях",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Сергей Бережной"],
+            "time": 1478790000000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 5. Клиентская оптимизация: базовые знания и лучшие практики",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Андрей Морозов"],
+            "time": 1479394800000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 6. Клиентская оптимизация: базовые знания и лучшие практики",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Иван Карев"],
+            "time": 1479999600000,
+            "classroom": "202"
+        },
+        {
+            "theme": "Лекция 7. Инфраструктура веб-проектов",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Прокопюк Андрей"],
+            "time": 1480604400000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 8. Инструменты разработки мобильного фронтенда",
+            "school": [{
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Прокопюк Андрей"],
+            "time": 1480604400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 1. Java Blitz (Часть 1)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Эдуард Мацуков"],
+            "time": 1476889200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 2. Git & Workflow",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Складной Дмитрий"],
+            "time": 1476889200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 3. Java Blitz (Часть 2)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Мацуков Эдуард"],
+            "time": 1477407600000,
+            "classroom": "204"
+        },
+        {
+            "theme": "MyFirstApp (Часть 1)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Григорьев Роман"],
+            "time": 1477407600000,
+            "classroom": "204"
+        },
+        {
+            "theme": "Лекция 5. MyFirstApp (Часть 2)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Григорьев Роман"],
+            "time": 1478098800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 6. ViewGroup",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Алексей Щербинин"],
+            "time": 1478098800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 7. Background",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Алексей Макаров"],
+            "time": 1478703600000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 8. RecyclerView",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Владимир Тагаков"],
+            "time": 1478703600000,
+            "classroom": "201"
+        },
+        {
+            "theme": "Лекция 9. Service & Broadcasts",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Алексей Макаров"],
+            "time": 1479308400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 10. Drawing",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Алексей Щербинин"],
+            "time": 1479308400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 11. Content provider",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Максим Хромцов"],
+            "time": 1479913200000,
+            "classroom": "202"
+        },
+        {
+            "theme": "Лекция 12. SQL&SQLite",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Василий Поликарпов"],
+            "time": 1479913200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 13. Fragments (Часть 1)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Денис Загаевский"],
+            "time": 1480518000000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 13. Fragments (Часть 2)",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Денис Загаевский"],
+            "time": 1480518000000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 15. MVP&Co",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Дмитрий Попов"],
+            "time": 1481122800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 16. Debugging & Polishing",
+            "school": [{
+                "name": "Школа мобильной разработки"
+            }],
+            "speaker": ["Илья Сергеев"],
+            "time": 1481727600000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 1. Идея, исследование, концепт (Часть 1)",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Антон Тен"],
+            "time": 1476802800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 2. Идея, исследование, концепт (Часть 2)",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Антон Тен"],
+            "time": 1476802800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 3. Особенности проектирования мобильных интерфейсов",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Васюнин Николай"],
+            "time": 1477407600000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 4. Продукт и платформа",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Сергей Калабин"],
+            "time": 1478012400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 5. Природа операционных систем",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Васюнин Николай"],
+            "time": 1478012400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 6. Прототипирование как процесс",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Сергей Томилов", "Дарья Старицына"],
+            "time": 1478617200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 7. Инструмент под задачи",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Сергей Томилов", "Дарья Старицына"],
+            "time": 1478617200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 8. Анимации",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Сергей Томилов", "Дарья Старицына"],
+            "time": 1479222000000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Дополнительная лекция. Design Everything",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Rijshouwer Krjn", "Treub Jonas"],
+            "time": 1479222000000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 9. Развите продукта",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Андрей Гевак"],
+            "time": 1479826800000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 10. Исследование интерфейсов",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Кондратьев Александр"],
+            "time": 1480345200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Лекция 11. Работа в команде",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Юрий Подорожный"],
+            "time": 1481036400000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Дополнительная лекция. Айдентика",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }],
+            "speaker": ["Дмитрий Моруз", "Ждан Филиппов"],
+            "time": 1481641200000,
+            "classroom": "200"
+        },
+        {
+            "theme": "Рабочий процесс",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }, {
+                "name": "Школа мобильной разработки"
+            }, {
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Дмитрий Моруз", "Ждан Филиппов"],
+            "time": 1481641200000,
+            "classroom": "205"
+        },
+        {
+            "theme": "Рабочее место",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }, {
+                "name": "Школа мобильной разработки"
+            }, {
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Дмитрий Моруз", "Ждан Филиппов"],
+            "time": 1481641200000,
+            "classroom": "205"
+        },
+        {
+            "theme": "Коммуникации в команде",
+            "school": [{
+                "name": "Школа мобильного дизайна"
+            }, {
+                "name": "Школа мобильной разработки"
+            }, {
+                "name": "Школа разработки интерфейсов"
+            }],
+            "speaker": ["Дмитрий Моруз", "Ждан Филиппов"],
+            "time": 1481641200000,
+            "classroom": "205"
+        }
+    ]
+</script>
+<!--DATA END-->
+<script>
+    function createEl(selector, classNames) {
+        var element = document.createElement(selector);
+        if (!!classNames) {
+            element.className = classNames
+        }
+        return element;
+    }
+    var app = document.querySelector('#app')
+    data.forEach(item => {
+        var lectureEl = createEl('article', 'lecture');
+        var hEl = createEl('div', 'time');
+        var nameEl = createEl('div', 'name');
+        var classEl = createEl('div', 'classroom');
+        var schoolEl = createEl('div','school');
+        hEl.textContent = `${new Date(item.time).toLocaleString()}`;
+        nameEl.textContent =
+            `${item.theme}` 
+        schoolEl.textContent = `${item.school.map(school=>school.name.toUpperCase().split(' ').map(school=>school[0]).join('')).join(', ')}`;
+        var speakerEl = createEl('div', 'speaker')
+        speakerEl.textContent = `${item.speaker.map(speaker=>speaker).join(', ')}`
+        classEl.textContent = `${item.classroom}`
+        lectureEl.appendChild(nameEl)
+        lectureEl.appendChild(schoolEl)
+        
+        lectureEl.appendChild(speakerEl)
+        lectureEl.appendChild(classEl)
+        lectureEl.appendChild(hEl)
+        app.appendChild(lectureEl);
+    })
+</script>
+
+</html>

@@ -1,0 +1,699 @@
+<html lang="ru">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="build/css.css" rel="stylesheet">
+    <link href="build/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="lorem" class="modal">
+        <div class="modal__wrapper">
+            <a href="#close" class="modal__wrapper-close">X</a>
+            <div class="modal__wrapper-speaker">
+                <h1 class="modal__wrapper-name">Lorem ipsum.</h1>
+                <div class="modal__wrapper-photo">
+                    <!--<img src="static/dushkin.jpg" alt="">-->
+                </div>
+            </div>
+            <div class="modal__wrapper-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, repudiandae minima totam molestiae natus sequi itaque neque dignissimos. Aperiam inventore asperiores ad, repudiandae fugiat ducimus facilis ipsa obcaecati sequi expedita unde eos! Fuga neque quidem voluptatum itaque temporibus id, in quasi totam iusto sapiente non dolor incidunt, amet deleniti deserunt eius ipsa corporis reprehenderit numquam assumenda cum. Quis nisi fugit architecto itaque tenetur voluptate voluptatibus, saepe doloremque, excepturi corporis. Officiis recusandae ea ad magni esse maxime quidem voluptas obcaecati, aspernatur? Expedita enim alias, perferendis labore mollitia corrupti magni ducimus cum distinctio accusantium eius libero, eligendi iste sed atque recusandae inventore.
+            </div>
+        </div>
+    </div>
+    <div id="grigoriyev" class="modal">
+        <div class="modal__wrapper">
+            <a href="#close" class="modal__wrapper-close">X</a>
+            <div class="modal__wrapper-speaker">
+                <h1 class="modal__wrapper-name">Григорьев Роман</h1>
+                <div class="modal__wrapper-photo">
+                    <!--<img src="static/dushkin.jpg" alt="">-->
+                </div>
+            </div>
+            <div class="modal__wrapper-info">
+                Окончил Самарский университет. Разрабатывает приложения для Android с 2010 года. В Яндексе — с 2012-го. Руководит разработкой мобильных клиентов Яндекс.Диска.
+            </div>
+        </div>
+    </div>
+    <div id="dushkin" class="modal">
+        <div class="modal__wrapper">
+            <a href="#close" class="modal__wrapper-close">X</a>
+            <div class="modal__wrapper-speaker">
+                <h1 class="modal__wrapper-name">Дмитрий Душкин</h1>
+                <div class="modal__wrapper-photo">
+                    <!--<img src="static/dushkin.jpg" alt="">-->
+                </div>
+            </div>
+            <div class="modal__wrapper-info">
+                Кандидат технических наук, научный сотрудник ИПУ РАН с 2008 по 2013. Пришёл в Яндекс.Картинки в 2014 году, отвечал за мобильную
+                версию и рост производительности сервиса. В 2016 перешёл в Yandex Data Factory, где разрабатывает интерфейсы
+                и дизайн веб-приложений для B2B.
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1>Мобилизация</h1>
+    <nav>
+        <div class="school__category">
+            <input class="shri-category" type="radio" id="all" name="shri" value=null><label for="all" title="Школа разработки интерфейсов"
+                class="shri">Все</label>
+            <input class="shri-category" type="radio" id="shri_1" name="shri" value="1"><label for="shri_1" title="Школа разработки интерфейсов"
+                class="shri">ШРИ</label>
+            <input class="shri-category" type="radio" name="shri" id="shri_2" value="2"><label for="shri_2" title="Школа мобильной разработки"
+                class="shmr">ШМР</label>
+            <input class="shri-category" type="radio" name="shri" id="shri_3" value="3"><label for="shri_3" title="Школа мобильного дизайна"
+                class="shmd">ШМД</label>
+        </div>
+    </nav>
+    </header>
+    <div id="app">
+        <article class="lecture lecture-done" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">20</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 1. Адаптивная верстка</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <a href="#dushkin" class="speaker">Дмитрий Душкин</a>
+            </div>
+                <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">27</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content" data-school="srhi">
+                <div class="name">Лекция 2. Работа с сенсорным пользовательским вводом</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <a href="#dushkin" class="speaker">Дмитрий Душкин</a>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">03</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 3. Мультимедиа: возможности браузера</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <div class="speaker">Максим Васильев</div>
+            </div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">10</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 4. Нативные приложения на веб-технологиях</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <div class="speaker">Сергей Бережной</div>
+            </div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">17</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 5. Клиентская оптимизация: базовые знания и лучшие практики</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <div class="speaker">Андрей Морозов</div>
+            </div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">24</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">202</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 6. Клиентская оптимизация: базовые знания и лучшие практики</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <a href="#lorem" class="speaker">Иван Карев</a>
+            </div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">01</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 7. Инфраструктура веб-проектов</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <div class="speaker">Прокопюк Андрей</div>
+
+            </div>
+        </article>
+        <article class="lecture" data-school="srhi">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">01</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 8. Инструменты разработки мобильного фронтенда</div>
+                <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
+                <div class="speaker">Прокопюк Андрей</div>
+            </div>
+        </article>
+        <article class="lecture lecture-done" >
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">19</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 1. Java Blitz (Часть 1)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Эдуард Мацуков</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">19</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 2. Git &amp; Workflow</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Складной Дмитрий</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">25</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">204</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 3. Java Blitz (Часть 2)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Мацуков Эдуард</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">25</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">204</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">MyFirstApp (Часть 1)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <a href="#grigoriyev" class="speaker">Григорьев Роман</a>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">02</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 5. MyFirstApp (Часть 2)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <a href="#grigoriyev" class="speaker">Григорьев Роман</a>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">02</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 6. ViewGroup</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Алексей Щербинин</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">09</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 7. Background</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Алексей Макаров</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">09</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">201</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 8. RecyclerView</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Владимир Тагаков</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">16</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 9. Service &amp; Broadcasts</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Алексей Макаров</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">16</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 10. Drawing</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Алексей Щербинин</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">23</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">202</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 11. Content provider</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <a href="#Lorem" class="speaker">Максим Хромцов</a>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">23</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 12. SQL&amp;SQLite</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Василий Поликарпов</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">30</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 13. Fragments (Часть 1)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Денис Загаевский</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">30</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 13. Fragments (Часть 2)</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Денис Загаевский</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">07</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 15. MVP&amp;Co</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Дмитрий Попов</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">14</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 16. Debugging &amp; Polishing</div>
+                <div class="school"><span title="Школа мобильной разработки" class="shmr">ШМР</span></div>
+                <div class="speaker">Илья Сергеев</div>
+            </div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">18</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 1. Идея, исследование, концепт (Часть 1)</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Антон Тен</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">18</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 2. Идея, исследование, концепт (Часть 2)</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Антон Тен</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture lecture-done">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">25</span>
+                    <span class="lecture__place-month">Окт</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 3. Особенности проектирования мобильных интерфейсов</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Васюнин Николай</div>
+            </div>
+            <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">01</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 4. Продукт и платформа</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Сергей Калабин</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">01</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 5. Природа операционных систем</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Васюнин Николай</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">08</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 6. Прототипирование как процесс</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Сергей Томилов, Дарья Старицына</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">08</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 7. Инструмент под задачи</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Сергей Томилов, Дарья Старицына</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">15</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 8. Анимации</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Сергей Томилов, Дарья Старицына</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">15</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Дополнительная лекция. Design Everything</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Rijshouwer Krjn, Treub Jonas</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">22</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 9. Развите продукта</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Андрей Гевак</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">28</span>
+                    <span class="lecture__place-month">Нбр</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 10. Исследование интерфейсов</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Кондратьев Александр</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">06</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Лекция 11. Работа в команде</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Юрий Подорожный</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">13</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">200</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Дополнительная лекция. Айдентика</div>
+                <div class="school"><span title="Школа мобильного дизайна" class="shmd">ШМД</span></div>
+                <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">13</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">205</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Рабочий процесс</div>
+                <div class="school">
+                    <span title="Школа мобильного дизайна" class="shmd">ШМД</span>
+                    <span title="Школа мобильной разработки" class="shmr">ШМР</span>
+                    <span title="Школа разработки интерфейсов" class="shri">ШРИ</span>
+                </div>
+                <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">13</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">205</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Рабочее место</div>
+                <div class="school">
+                    <span title="Школа мобильного дизайна" class="shmd">ШМД</span>
+                    <span title="Школа мобильной разработки" class="shmr">ШМР</span>
+                    <span title="Школа разработки интерфейсов" class="shri">ШРИ</span>
+                </div>
+                <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
+            </div>
+        </article>
+        <article class="lecture">
+            <div class="lecture__place">
+                <div class="lecture__place-datetime">
+                    <span class="lecture__place-day">13</span>
+                    <span class="lecture__place-month">Дек</span>
+                    <span class="lecture__place-time">18:00</span>
+                </div>
+                <div class="lecture__place-classroom">205</div>
+            </div>
+            <div class="lecture__content">
+                <div class="name">Коммуникации в команде</div>
+                <div class="school">
+                    <span title="Школа мобильного дизайна" class="shmd">ШМД</span>
+                    <span title="Школа мобильной разработки" class="shmr">ШМР</span>
+                    <span title="Школа разработки интерфейсов" class="shri">ШРИ</span>
+                </div>
+                <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
