@@ -47,6 +47,7 @@ input[type="radio"].shri-category+label {
     display: flex;
     flex: 1;
     justify-content: center;
+    padding: 7px 0;
 }
 
 input[type="radio"].shri-category:checked+label {
