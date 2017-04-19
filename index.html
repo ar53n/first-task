@@ -58,19 +58,19 @@
         <h1>Мобилизация</h1>
     <nav>
         <div class="school__category">
-            <input class="shri-category" type="radio" id="all" name="shri" value=null><label for="all" title="Школа разработки интерфейсов"
+            <input class="shri-category" type="radio" id="all" name="shri" value="shri_all"><label for="all" title="Школа разработки интерфейсов"
                 class="shri">Все</label>
-            <input class="shri-category" type="radio" id="shri_1" name="shri" value="1"><label for="shri_1" title="Школа разработки интерфейсов"
+            <input class="shri-category" type="radio" id="shri" name="shri" value="shri"><label for="shri" title="Школа разработки интерфейсов"
                 class="shri">ШРИ</label>
-            <input class="shri-category" type="radio" name="shri" id="shri_2" value="2"><label for="shri_2" title="Школа мобильной разработки"
+            <input class="shri-category" type="radio" name="shri" id="shmr" value="shmr"><label for="shmr" title="Школа мобильной разработки"
                 class="shmr">ШМР</label>
-            <input class="shri-category" type="radio" name="shri" id="shri_3" value="3"><label for="shri_3" title="Школа мобильного дизайна"
+            <input class="shri-category" type="radio" name="shri" id="shmd" value="shmd"><label for="shmd" title="Школа мобильного дизайна"
                 class="shmd">ШМД</label>
         </div>
     </nav>
     </header>
     <div id="app">
-        <article class="lecture lecture-done" data-school="srhi">
+        <article class="lecture lecture-done" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">20</span>
@@ -86,7 +86,7 @@
             </div>
                 <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done" data-school="srhi">
+        <article class="lecture lecture-done" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">27</span>
@@ -95,14 +95,14 @@
                 </div>
                 <div class="lecture__place-classroom">201</div>
             </div>
-            <div class="lecture__content" data-school="srhi">
+            <div class="lecture__content" data-school="shri">
                 <div class="name">Лекция 2. Работа с сенсорным пользовательским вводом</div>
                 <div class="school"><span title="Школа разработки интерфейсов" class="shri">ШРИ</span></div>
                 <a href="#dushkin" class="speaker">Дмитрий Душкин</a>
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">03</span>
@@ -117,7 +117,7 @@
                 <div class="speaker">Максим Васильев</div>
             </div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">10</span>
@@ -132,7 +132,7 @@
                 <div class="speaker">Сергей Бережной</div>
             </div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">17</span>
@@ -147,7 +147,7 @@
                 <div class="speaker">Андрей Морозов</div>
             </div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">24</span>
@@ -162,7 +162,7 @@
                 <a href="#lorem" class="speaker">Иван Карев</a>
             </div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">01</span>
@@ -178,7 +178,7 @@
 
             </div>
         </article>
-        <article class="lecture" data-school="srhi">
+        <article class="lecture" data-school="shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">01</span>
@@ -193,7 +193,7 @@
                 <div class="speaker">Прокопюк Андрей</div>
             </div>
         </article>
-        <article class="lecture lecture-done" >
+        <article class="lecture lecture-done"  data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">19</span>
@@ -209,7 +209,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">19</span>
@@ -225,7 +225,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">25</span>
@@ -241,7 +241,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">25</span>
@@ -257,7 +257,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">02</span>
@@ -272,7 +272,7 @@
                 <a href="#grigoriyev" class="speaker">Григорьев Роман</a>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">02</span>
@@ -287,7 +287,7 @@
                 <div class="speaker">Алексей Щербинин</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">09</span>
@@ -302,7 +302,7 @@
                 <div class="speaker">Алексей Макаров</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">09</span>
@@ -317,7 +317,7 @@
                 <div class="speaker">Владимир Тагаков</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">16</span>
@@ -332,7 +332,7 @@
                 <div class="speaker">Алексей Макаров</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">16</span>
@@ -347,7 +347,7 @@
                 <div class="speaker">Алексей Щербинин</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">23</span>
@@ -362,7 +362,7 @@
                 <a href="#Lorem" class="speaker">Максим Хромцов</a>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">23</span>
@@ -377,7 +377,7 @@
                 <div class="speaker">Василий Поликарпов</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">30</span>
@@ -392,7 +392,7 @@
                 <div class="speaker">Денис Загаевский</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">30</span>
@@ -407,7 +407,7 @@
                 <div class="speaker">Денис Загаевский</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">07</span>
@@ -422,7 +422,7 @@
                 <div class="speaker">Дмитрий Попов</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmr">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">14</span>
@@ -437,7 +437,7 @@
                 <div class="speaker">Илья Сергеев</div>
             </div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">18</span>
@@ -453,7 +453,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">18</span>
@@ -469,7 +469,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture lecture-done">
+        <article class="lecture lecture-done" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">25</span>
@@ -485,7 +485,7 @@
             </div>
             <div class="lecture__content-button"><a class="button__link" href="#youtube"><span class="button__text">Смотреть</span><span class="button__icon"></span></a></div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">01</span>
@@ -500,7 +500,7 @@
                 <div class="speaker">Сергей Калабин</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">01</span>
@@ -515,7 +515,7 @@
                 <div class="speaker">Васюнин Николай</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">08</span>
@@ -530,7 +530,7 @@
                 <div class="speaker">Сергей Томилов, Дарья Старицына</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">08</span>
@@ -545,7 +545,7 @@
                 <div class="speaker">Сергей Томилов, Дарья Старицына</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">15</span>
@@ -560,7 +560,7 @@
                 <div class="speaker">Сергей Томилов, Дарья Старицына</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">15</span>
@@ -575,7 +575,7 @@
                 <div class="speaker">Rijshouwer Krjn, Treub Jonas</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">22</span>
@@ -590,7 +590,7 @@
                 <div class="speaker">Андрей Гевак</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">28</span>
@@ -605,7 +605,7 @@
                 <div class="speaker">Кондратьев Александр</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">06</span>
@@ -620,7 +620,7 @@
                 <div class="speaker">Юрий Подорожный</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">13</span>
@@ -635,7 +635,7 @@
                 <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd, shmr,shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">13</span>
@@ -654,7 +654,7 @@
                 <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd, shmr,shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">13</span>
@@ -673,7 +673,7 @@
                 <div class="speaker">Дмитрий Моруз, Ждан Филиппов</div>
             </div>
         </article>
-        <article class="lecture">
+        <article class="lecture" data-school="shmd, shmr,shri">
             <div class="lecture__place">
                 <div class="lecture__place-datetime">
                     <span class="lecture__place-day">13</span>
