@@ -118,7 +118,7 @@ article.lecture {
 
 .lecture__place-classroom::before {
     content: "";
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494.239 494.238"><path d="M199.725 0v36.025H85.21v421.66l114.515.094v36.458l209.085-37.555.216-418.867L199.726 0zm34.68 230.574c7.02 0 12.714 7.408 12.714 16.545 0 9.138-5.693 16.544-12.716 16.544s-12.715-7.406-12.715-16.545c-.002-9.138 5.692-16.546 12.714-16.546zM119.21 423.714V70.023h80.515V423.78l-80.514-.065z"/></svg>') no-repeat;
+    background: url('../static/svg/door.svg') no-repeat;
     /* background-color: red; */
     width: 20px;
     height: 20px;
@@ -189,7 +189,7 @@ article.lecture {
 .button__icon {
     width: 25px;
     height: 25px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.999 41.999"><path d="M36.068 20.176l-29-20c-.307-.21-.705-.233-1.033-.062C5.705.287 5.5.627 5.5 1v40c0 .37.206.712.535.885.146.076.306.114.465.114.2 0 .397-.06.568-.178l29-20c.27-.187.432-.494.432-.823s-.162-.637-.432-.824z" fill="#FFF"/></svg>') no-repeat;
+    background: url('../static/svg/play.svg') no-repeat;
     display: block;
 }
 
