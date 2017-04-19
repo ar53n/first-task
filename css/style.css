@@ -233,7 +233,7 @@ article.lecture {
 .modal__wrapper {
     width: 100%;
     max-width: 450px;
-    height: auto;
+    height: 100%;
     max-height: 750px;
     background: white;
     overflow: hidden;
@@ -272,7 +272,7 @@ article.lecture {
 }
 
 .modal__wrapper-info {
-    overflow: scroll;
+    overflow: auto;
     max-height: 500px;
     height: auto;
     margin: 5px 5px;
@@ -338,6 +338,7 @@ article.lecture {
     }
     .modal__wrapper {
         visibility: initial;
+        height: auto;
         top: 120px;
         right: 0%;
         transform: translateX(25%);
@@ -354,6 +355,7 @@ article.lecture {
     }
     .modal__wrapper {
         visibility: initial;
+        height: auto;
         top: 35%;
         left: 750px;
         transform: translate(5%, -40%);
