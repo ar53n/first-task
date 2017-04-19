@@ -119,7 +119,6 @@ article.lecture {
 .lecture__place-classroom::before {
     content: "";
     background: url('../static/svg/door.svg') no-repeat;
-    /* background-color: red; */
     width: 20px;
     height: 20px;
 }
@@ -143,11 +142,6 @@ article.lecture {
     font-size: 14px;
     font-weight: lighter;
 }
-
-/*.lecture__content .speaker:focus {
-    font-size: 16px;
-    font-weight: bolder;
-}*/
 
 .lecture__content .school {
     margin: 5px 0;
@@ -221,12 +215,9 @@ article.lecture {
     width: 100%;
     height: 100%;
     opacity: 1;
-    /* max-height: 400px; */
-    /* max-width: 600px; */
     background-color: white;
     transform: translate(0%, 0%);
     display: block;
-    /*visibility: visible;*/
     background: rgba(0, 0, 0, 0.49);
 }
 
@@ -339,10 +330,12 @@ article.lecture {
     .modal__wrapper {
         visibility: initial;
         height: auto;
-        top: 120px;
-        right: 0%;
-        transform: translateX(25%);
+        top: 35%;
+        left: 750px;
+        transform: translate(5%, -40%);
+        max-height: 550px;
         position: fixed;
+        z-index: 10;
     }
 }
 
@@ -370,15 +363,14 @@ article.lecture {
 }
 
 
-/*@media (min-height: 751px ) {
+@media screen and (min-height: 700px) {
     .modal__wrapper {
-        top: 0%;
-        left: 750px;
-        transform: translate(5%, 30%);
-        max-height: 600px;
-        position: fixed;
+        height: auto;
+        max-height: 550px;
     }
-}*/
+}
+
+
 
 
 /*Новый стиль кнопки*/
