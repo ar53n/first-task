@@ -308,7 +308,7 @@ article.lecture {
     }
 }
 
-@media (orientation:landscape) and (max-height: 750px) {
+@media (orientation:landscape) and (max-height: 660px) {
     .modal__wrapper {
         max-height: initial;
         max-width: initial;
@@ -380,7 +380,7 @@ article.lecture {
     }
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 670px) {
     .modal__wrapper {
         height: auto;
         max-height: 550px;
