@@ -77,7 +77,6 @@ article.lecture {
 .lecture__place {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
     align-items: center;
     flex: 1;
     max-width: 105px;
@@ -351,9 +350,7 @@ article.lecture {
     .modal__wrapper {
         visibility: initial;
         height: auto;
-         top: 135px; 
-        /* left: 750px; */
-        /* transform: translate(5%, -40%); */
+        top: 135px; 
         max-height: 550px;
         position: fixed;
         z-index: 10;
@@ -374,7 +371,6 @@ article.lecture {
         height: auto;
         top: 135px;
         left: 750px;
-        /*transform: translateY(5%);*/
         max-height: 550px;
         position: fixed;
         z-index: 10;
@@ -390,6 +386,3 @@ article.lecture {
         max-height: 550px;
     }
 }
-
-
-/*Новый стиль кнопки*/
