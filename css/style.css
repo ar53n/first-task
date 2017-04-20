@@ -77,7 +77,6 @@ article.lecture {
 .lecture__place {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
     align-items: center;
     flex: 1;
     max-width: 105px;
@@ -309,7 +308,7 @@ article.lecture {
     }
 }
 
-@media (orientation:landscape) and (max-height: 700px) {
+@media (orientation:landscape) and (max-height: 660px) {
     .modal__wrapper {
         max-height: initial;
         max-width: initial;
@@ -331,10 +330,32 @@ article.lecture {
         height: auto;
         top: 35%;
         left: 750px;
-        transform: translate(5%, -40%);
+        transform: translate(5%);
         max-height: 550px;
         position: fixed;
         z-index: 10;
+    }
+}
+
+@media (min-width: 1250px) and (max-height:750px) {
+    .modal {
+        visibility: hidden;
+    }
+    .modal:target {
+        background: none;
+        max-height: initial;
+        max-width: initial;
+        z-index: 10;
+    }
+    .modal__wrapper {
+        visibility: initial;
+        height: auto;
+        top: 135px; 
+        max-height: 550px;
+        position: fixed;
+        z-index: 10;
+        height: 90%;
+        max-width: 450px;
     }
 }
 
@@ -348,9 +369,8 @@ article.lecture {
     .modal__wrapper {
         visibility: initial;
         height: auto;
-        top: 35%;
+        top: 135px;
         left: 750px;
-        transform: translate(5%, -40%);
         max-height: 550px;
         position: fixed;
         z-index: 10;
@@ -360,12 +380,9 @@ article.lecture {
     }
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 670px) {
     .modal__wrapper {
         height: auto;
         max-height: 550px;
     }
 }
-
-
-/*Новый стиль кнопки*/
