@@ -351,10 +351,9 @@ article.lecture {
         visibility: initial;
         height: auto;
         top: 135px; 
-        max-height: 550px;
+        max-height: 400px;
         position: fixed;
         z-index: 10;
-        height: 90%;
         max-width: 450px;
     }
 }
