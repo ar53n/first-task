@@ -18,4 +18,10 @@ shri.addEventListener('change', function (e) {
         }
     })
 })
+
+window.addEventListener('click',function(e){
+    if (e.srcElement.classList.contains('modal')) {
+        location.hash="#close"
+    }
+})
 })()
