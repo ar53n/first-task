@@ -1,5 +1,6 @@
-shri = document.querySelectorAll('.school__category')[0]
-lectures = document.querySelectorAll('.lecture')
+(function() {
+var shri = document.querySelectorAll('.school__category')[0]
+var lectures = document.querySelectorAll('.lecture')
 var lectures_array = Array.prototype.slice.call(lectures);
 shri.addEventListener('change', function (e) {
     console.log(e)
@@ -17,3 +18,4 @@ shri.addEventListener('change', function (e) {
         }
     })
 })
+})()
