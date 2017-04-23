@@ -155,17 +155,12 @@ article.lecture {
     line-height: 1.8;
 }
 
-.lecture__content-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.button__link {
+    flex-direction: row;
+    justify-content: center;
     flex: 1;
     max-width: 105px;
     background: red;
-}
-
-.button__link {
     display: flex;
     align-items: center;
     color: white;
@@ -305,6 +300,12 @@ article.lecture {
     }
     .button__text {
         display: block;
+    }
+}
+
+@media (max-width: 1250px) {
+    div#app {
+        margin: 0 auto;
     }
 }
 
