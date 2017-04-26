@@ -2,21 +2,37 @@
     var shri = document.querySelectorAll('.school__category')[0]
     var lectures = document.querySelectorAll('.lecture')
     var lectures_array = Array.prototype.slice.call(lectures);
-    shri.addEventListener('change', function (e) {
-        console.log(e)
+
+    function displayScool(school) {
         lectures_array.forEach(function (lec) {
-            if (e.target.value === 'shri_all') {
+            if (school === 'shri_all') {
                 lec.style.display = "flex"
             }
-            if (lec.getAttribute("data-school").indexOf(e.target.value) >= 0) {
+            if (lec.getAttribute("data-school").indexOf(school) >= 0) {
                 console.log(lec)
                 lec.style.display = "flex"
-            } else if (e.target.value === 'shri_all') {
+            } else if (school === 'shri_all') {
                 lec.style.display = "flex"
             } else {
                 lec.style.display = "none"
             }
         })
+    }
+
+    if (localStorage) {
+        var targetSchool = localStorage.getItem('school');
+        if (targetSchool) {
+            displayScool(targetSchool);
+            shri.querySelector('[value='+ targetSchool +']').checked = true;
+        }
+    }
+
+    shri.addEventListener('change', function (e) {
+        var targetSchool = e.target.value;
+        if (localStorage) {
+            localStorage.setItem('school', targetSchool)
+        }
+        displayScool(targetSchool);
     })
 
     document.addEventListener('click', function (e) {
